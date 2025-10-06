@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loisirs</title>
+    <style>
+        
+img:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  cursor: pointer;
+  opacity: 0.9;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+.image-box {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+.image-box:hover img {
+  transform: scale(1.05); /* Optional zoom effect */
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(239, 167, 22);
+  font-size: 2.5em;
+  font-family: 'Georgia', serif;
+  background: rgba(26, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.image-box:hover .hover-text {
+  opacity: 1;
+}
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('rain.jfif');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hero-title {
+  font-size: 5rem; /* Big and bold */
+  font-weight: bold;
+  text-align: center;
+  padding: 250px 20px;
+  background: linear-gradient(to right, #72a4fb56, #6830f7); /* Soft gradient */
+  color: #fffefe;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+}
+.little-hero-title {
+  font-size: 3rem; /* Big and bold */
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, hsla(175, 90%, 50%, 0.337), #d73cda5f); /* Soft gradient */
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+}
+/*responsive*/
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+    padding: 60px 10px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="hero-title">
+  Welcome make sure to enjoy
+</div>
+<br><br>
+    <div class="little-hero-title">Section1: Books !</div>
+    <div class="gallery image-box">
+        <img src="&&&1.jpeg" >
+        <img src="&&&2.jpeg" >
+        <img src="&&&3.jpeg" >
+        <img src="&&&4.jpeg" >
+        <img src="&&&5.jpeg" >
+        <img src="&&&6.jpeg" >
+        <img src="&&&7.jpeg" >
+        <img src="&&&8.jpeg" >
+        <img src="&&&9.jpeg" >
+        <img src="&&&10.jpeg" >
+        <img src="&&&11.jpeg" >
+        <img src="&&&12.jpeg" >
+        <img src="&&&13.jpeg" >
+        <div class="hover-text">Books i read✨</div>
+    </div>
+    <br><br>
+    <div class="little-hero-title">Section2: Hobbies !</div>
+    <div class="gallery image-box">
+        <img src="&&1.jfif" >
+        <img src="&&15.jfif" >
+        <img src="&&17.jfif" >
+        <img src="&&5.jfif" >
+        <img src="&&11.jfif" >
+        <img src="&&9.jfif" >
+        <img src="&&4.jfif" >
+        <img src="&&3.jfif" >
+        <img src="&&18.jfif" >
+        <img src="&&20.jfif" >
+        <img src="&&19.jfif" >
+        <img src="&&16.jfif" >
+        <img src="&&12.jfif" >
+        <img src="&&13.jfif" >
+        <img src="&&14.jfif" >
+        <div class="hover-text">My hobbies✨</div>
+    </div>
+    <br><br>
+    <div class="little-hero-title"> Section3: Anime !</div>
+    <div class="gallery image-box">
+        <img src="&1.jfif" >
+        <img src="&2.jfif" >
+        <img src="&3.jfif" >
+        <img src="&4.jfif" >
+        <img src="&7.jfif" >
+        <img src="&8.jfif" >
+        <img src="&9.jfif" >
+        <img src="&16.jfif" >
+        <img src="&17.jfif" >
+        <img src="&15.jfif" >
+        <img src="&21.jfif" >
+        <img src="&25.jfif" >
+        <img src="&26.jfif" >
+        <img src="&23.jfif" >
+        <img src="&11.jfif" >
+        <div class="hover-text">My favorite Anime✨</div>
+    </div>
+    <br><br>
+    <div class="little-hero-title">Section4: Vibe !</div>
+    <div class="gallery image-box">
+        <img src="1.jpeg" >
+        <img src="2.jpeg" >
+        <img src="3.jpeg" >
+        <img src="4.jpeg" >
+        <img src="5.jpeg" >
+        <img src="6.jpeg" >
+        <img src="7.jpeg" >
+        <img src="8.jpeg" >
+        <img src="9.jpeg" >
+        <img src="10.jpeg" >
+        <img src="11.jpeg" >
+        <img src="12.jpeg" >
+        <div class="hover-text">Discover more</div>
+    </div>
+
+</body>
+</html>
